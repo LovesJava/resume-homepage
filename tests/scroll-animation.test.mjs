@@ -188,3 +188,11 @@ test("CSS defines restrained desktop, mobile, and reduced-motion behavior", () =
     /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.js \.hero-reveal[\s\S]*opacity:\s*1 !important[\s\S]*transition:\s*none !important/
   );
 });
+
+test("reveal CSS does not retain a persistent compositor hint", () => {
+  const revealRule = html.match(
+    /\.js \.hero-reveal,\s*\.js \.reveal\s*\{([\s\S]*?)\}/
+  )?.[1] ?? "";
+
+  assert.doesNotMatch(revealRule, /will-change\s*:/);
+});
