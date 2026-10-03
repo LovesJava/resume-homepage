@@ -3,59 +3,196 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="黄广平，拥有 5 年 Java 后端开发经验，参与 OMS、TMS 等企业级系统建设，具备数据库拆分、跨库迁移、消息解耦和微服务协作经验。">
+  <meta name="description" content="黄广平，Java 后端开发工程师，拥有 5 年医药零售与电商物流领域开发经验，熟悉 OMS 订单、B2C 售后、TMS 排班及网络货运业务。查看代表项目、工作经历与技术文章。">
   <title>黄广平｜Java 后端开发工程师</title>
   <style>
-:root { --ink: #071a24; --ink-soft: #12303d; --paper: #f4f1ea; --paper-bright: #fbfaf7; --accent: #28d7b7; --accent-dark: #087b6a; --warm: #f2b84b; --muted: #5f6e74; --line: rgba(7, 26, 36, 0.15); --line-dark: rgba(255, 255, 255, 0.16); --display: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif; --mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace; --radius: 1.5rem; --shadow: 0 24px 70px rgba(7, 26, 36, 0.13); --content: 1180px; }
-* { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--display); line-height: 1.75; text-rendering: optimizeLegibility; } a { color: inherit; text-decoration: none; } a:focus-visible { outline: 3px solid var(--warm); outline-offset: 4px; }
-.skip-link { position: fixed; top: 0.75rem; left: 0.75rem; z-index: 100; transform: translateY(-180%); padding: 0.7rem 1rem; color: white; background: var(--ink); border-radius: 0.5rem; } .skip-link:focus { transform: translateY(0); }
-.site-header { position: sticky; top: 0; z-index: 50; color: white; background: rgba(7, 26, 36, 0.88); border-bottom: 1px solid var(--line-dark); backdrop-filter: blur(18px); } .nav-shell { width: min(calc(100% - 2.5rem), var(--content)); min-height: 4.5rem; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; } .brand { display: inline-flex; align-items: center; gap: 0.75rem; font-weight: 800; } .brand-mark { display: grid; place-items: center; width: 2rem; height: 2rem; color: var(--ink); background: var(--accent); border-radius: 0.55rem; font-family: var(--mono); } .nav-links { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); font-size: 0.9rem; color: rgba(255,255,255,0.72); } .nav-links a { position: relative; padding: 0.4rem 0; } .nav-links a::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; } .nav-links a:hover, .nav-links a[aria-current="true"] { color: white; } .nav-links a:hover::after, .nav-links a[aria-current="true"]::after { transform: scaleX(1); }
-.hero { position: relative; min-height: calc(100vh - 4.5rem); overflow: hidden; padding: clamp(5rem, 10vw, 9rem) max(1.25rem, calc((100vw - var(--content)) / 2)); display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr); align-items: center; gap: clamp(3rem, 8vw, 7rem); color: white; background: var(--ink); } .hero::before { content: ""; position: absolute; inset: 0; opacity: 0.3; background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(to bottom, black, transparent 88%); pointer-events: none; } .hero::after { content: ""; position: absolute; width: 34rem; height: 34rem; right: -12rem; top: -14rem; border: 1px solid rgba(40,215,183,0.28); border-radius: 50%; box-shadow: 0 0 0 6rem rgba(40,215,183,0.025), 0 0 0 12rem rgba(40,215,183,0.018); pointer-events: none; } .hero-content, .hero-panel { position: relative; z-index: 1; } .eyebrow { margin: 0 0 1.25rem; color: var(--accent-dark); font: 700 0.78rem/1.4 var(--mono); letter-spacing: 0.13em; text-transform: uppercase; } .hero .eyebrow, .section-dark .eyebrow, .contact-section .eyebrow { color: var(--accent); } .status-dot { display: inline-block; width: 0.58rem; height: 0.58rem; margin-right: 0.55rem; background: var(--accent); border-radius: 50%; box-shadow: 0 0 0 0.3rem rgba(40,215,183,0.12); } h1, h2, h3, p { margin-top: 0; } h1 { max-width: 780px; margin-bottom: 1.6rem; font-size: clamp(3rem, 7vw, 6.4rem); line-height: 1.05; letter-spacing: -0.055em; } h1 span { color: var(--accent); } .hero-lead { max-width: 680px; margin-bottom: 2rem; color: rgba(255,255,255,0.72); font-size: clamp(1rem, 1.6vw, 1.2rem); } .hero-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-bottom: clamp(3rem, 6vw, 5rem); } .button { display: inline-flex; min-height: 3.15rem; align-items: center; justify-content: center; padding: 0.75rem 1.25rem; border: 1px solid var(--line-dark); border-radius: 999px; font-weight: 800; transition: transform 180ms ease, background 180ms ease; } .button:hover { transform: translateY(-2px); } .button-primary { color: var(--ink); background: var(--accent); border-color: var(--accent); } .button-ghost { color: white; background: rgba(255,255,255,0.04); } .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; } .hero-stats div { padding-top: 1rem; border-top: 1px solid var(--line-dark); } .hero-stats dt { font: 800 clamp(1.7rem, 3vw, 2.5rem)/1 var(--mono); } .hero-stats dd { margin: 0.55rem 0 0; color: rgba(255,255,255,0.56); font-size: 0.85rem; }
-.hero-panel { padding: clamp(1.5rem, 4vw, 2.5rem); background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); box-shadow: var(--shadow); backdrop-filter: blur(16px); } .panel-top { display: flex; justify-content: space-between; color: rgba(255,255,255,0.5); font: 700 0.68rem/1.4 var(--mono); letter-spacing: 0.09em; } .panel-state { color: var(--accent); } .profile-portrait {
-  aspect-ratio: 4 / 3;
-  margin: clamp(1.6rem, 4vw, 2.5rem) 0;
-  overflow: hidden;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.16);
-  border-radius: calc(var(--radius) - 0.45rem);
+:root {
+  --ink: #071a24;
+  --ink-soft: #12303d;
+  --paper: #f4f1ea;
+  --paper-bright: #fbfaf7;
+  --accent: #28d7b7;
+  --accent-dark: #087b6a;
+  --warm: #f2b84b;
+  --muted: #5f6e74;
+  --line: rgba(7, 26, 36, 0.15);
+  --line-dark: rgba(255, 255, 255, 0.16);
+  --display: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+  --mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --radius: 1.5rem;
+  --content: 1180px;
 }
-.profile-portrait img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-} .code-lines { padding-top: 1.2rem; border-top: 1px solid var(--line-dark); color: rgba(255,255,255,0.68); font: 0.78rem/1.8 var(--mono); } .code-lines p { margin-bottom: 0.3rem; } .code-lines span { color: var(--warm); }
-.section { width: min(calc(100% - 2.5rem), var(--content)); margin: auto; padding: clamp(5.5rem, 10vw, 9rem) 0; } .section-dark { width: 100%; max-width: none; padding-inline: max(1.25rem, calc((100vw - var(--content)) / 2)); color: white; background: var(--ink-soft); } .section-heading { display: grid; grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr); align-items: start; gap: 2rem; margin-bottom: clamp(3rem, 6vw, 5rem); } .section-heading h2 { max-width: 800px; margin: 0; font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.13; letter-spacing: -0.045em; } .about-layout { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(3rem, 8vw, 7rem); } .about-copy { font-size: clamp(1.08rem, 1.7vw, 1.28rem); } .about-copy p:last-child { margin-bottom: 0; } .capability-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); } .capability-card { min-height: 220px; padding: 1.6rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); } .capability-card > span, .project-number, .skill-index { color: var(--accent-dark); font: 800 0.78rem/1 var(--mono); } .capability-card h3 { margin: 3rem 0 0.6rem; font-size: 1.2rem; } .capability-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
-.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; overflow: hidden; background: var(--line-dark); border: 1px solid var(--line-dark); border-radius: var(--radius); } .project-card { min-width: 0; padding: clamp(1.6rem, 3vw, 2.3rem); background: var(--ink-soft); } .project-number { margin-bottom: clamp(4rem, 8vw, 7rem); color: var(--accent); } .project-context { color: var(--warm); font: 700 0.72rem/1.4 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; } .project-card h3 { margin-bottom: 1rem; font-size: clamp(1.45rem, 2.3vw, 2rem); } .project-card > p:not(.project-context):not(.project-result) { color: rgba(255,255,255,0.68); } .project-result { margin: 1.5rem 0; padding-top: 1.2rem; color: rgba(255,255,255,0.72); border-top: 1px solid var(--line-dark); } .project-result strong { display: block; margin-bottom: 0.4rem; color: white; font-size: 0.82rem; } .tag-list, .skill-list { display: flex; flex-wrap: wrap; gap: 0.55rem; margin: 0; padding: 0; list-style: none; } .tag-list li { padding: 0.35rem 0.6rem; color: rgba(255,255,255,0.63); background: rgba(255,255,255,0.06); border: 1px solid var(--line-dark); border-radius: 999px; font: 0.7rem/1.2 var(--mono); }
-.timeline { border-top: 1px solid var(--line); } .timeline-item { display: grid; grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr); gap: 2rem; padding: 2.25rem 0; border-bottom: 1px solid var(--line); } .timeline-item time { color: var(--accent-dark); font: 800 0.8rem/1.5 var(--mono); } .timeline-kicker { margin-bottom: 0.4rem; color: var(--muted); font-size: 0.85rem; font-weight: 800; } .timeline-item h3 { margin-bottom: 0.75rem; font-size: clamp(1.25rem, 2.5vw, 1.8rem); } .timeline-item div > p:last-child { max-width: 760px; margin-bottom: 0; color: var(--muted); } .skills-section { padding-top: 2rem; } .skill-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; } .skill-groups article { padding: 1.8rem; background: var(--paper-bright); border: 1px solid var(--line); border-radius: 1rem; } .skill-groups h3 { margin: 3.5rem 0 1.25rem; font-size: 1.3rem; } .skill-list li { padding: 0.5rem 0.75rem; color: var(--ink-soft); background: var(--paper); border-radius: 0.45rem; font: 0.76rem/1.2 var(--mono); }
-.contact-section { width: min(calc(100% - 2.5rem), var(--content)); margin: 0 auto clamp(2rem, 4vw, 4rem); padding: clamp(2rem, 5vw, 4rem); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 2rem; color: white; background: var(--ink); border-radius: var(--radius); box-shadow: var(--shadow); } .contact-section h2 { max-width: 780px; margin: 0; font-size: clamp(2rem, 4.5vw, 4rem); line-height: 1.15; letter-spacing: -0.045em; } .contact-link { display: inline-flex; align-items: center; gap: 1.2rem; padding-bottom: 0.35rem; color: var(--accent); border-bottom: 1px solid var(--accent); font: 800 0.9rem/1.4 var(--mono); } .contact-link span:last-child { font-size: 1.4rem; transition: transform 180ms ease; } .contact-link:hover span:last-child { transform: translate(3px, -3px); } .site-footer { width: min(calc(100% - 2.5rem), var(--content)); margin: auto; padding: 1.5rem 0 2.5rem; display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); border-top: 1px solid var(--line); font: 0.76rem/1.5 var(--mono); } .site-footer p { margin: 0; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--display); line-height: 1.75; text-rendering: optimizeLegibility; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--warm); outline-offset: 4px; }
+h1, h2, h3, p { margin-top: 0; }
+.skip-link { position: fixed; top: .75rem; left: .75rem; z-index: 100; transform: translateY(-180%); padding: .7rem 1rem; color: white; background: var(--ink); border-radius: .5rem; }
+.skip-link:focus { transform: translateY(0); }
+.site-header { position: sticky; top: 0; z-index: 50; color: white; background: rgba(7,26,36,.94); border-bottom: 1px solid var(--line-dark); backdrop-filter: blur(18px); }
+.nav-shell { width: min(calc(100% - 2.5rem), var(--content)); min-height: 4.5rem; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.brand { display: inline-flex; align-items: center; gap: .75rem; font-weight: 800; flex-shrink: 0; }
+.brand-mark { display: grid; place-items: center; width: 2rem; height: 2rem; color: var(--ink); background: var(--accent); border-radius: .55rem; font-family: var(--mono); }
+.nav-links { display: flex; align-items: center; gap: clamp(1rem,3vw,2rem); font-size: .9rem; color: rgba(255,255,255,.75); }
+.nav-links a { position: relative; padding: .65rem 0; white-space: nowrap; }
+.nav-links a::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; }
+.nav-links a:hover, .nav-links a[aria-current="true"] { color: white; }
+.nav-links a:hover::after, .nav-links a[aria-current="true"]::after { transform: scaleX(1); }
+.hero { position: relative; overflow: hidden; padding: clamp(3rem,6vw,5rem) max(1.25rem,calc((100vw - var(--content)) / 2)); display: grid; grid-template-columns: minmax(0,1.4fr) minmax(240px,.7fr); align-items: center; gap: clamp(2rem,5vw,4.5rem); color: white; background: var(--ink); }
+.hero::before { content: ""; position: absolute; inset: 0; opacity: .3; background-image: linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(to bottom,black,transparent 88%); pointer-events: none; }
+.hero-content, .hero-panel { position: relative; z-index: 1; min-width: 0; }
+.eyebrow { margin: 0 0 1rem; color: var(--accent-dark); font: 700 .75rem/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.hero .eyebrow, .section-dark .eyebrow, .contact-section .eyebrow { color: var(--accent); }
+.status-dot { display: inline-block; width: .5rem; height: .5rem; margin-right: .5rem; background: var(--accent); border-radius: 50%; }
+h1 { margin-bottom: 1.5rem; font-size: clamp(2.8rem,5vw,4.5rem); line-height: 1.2; letter-spacing: -.035em; }
+h1 span { display: block; margin-top: .55rem; color: var(--accent); font-size: clamp(1.4rem,2.6vw,2rem); line-height: 1.4; letter-spacing: 0; }
+.hero-lead { max-width: 660px; margin-bottom: 1.5rem; color: rgba(255,255,255,.76); font-size: 1rem; }
+.hero-lead p { margin-bottom: .65rem; }
+.hero-industry { color: white; font-size: clamp(1.05rem,1.8vw,1.25rem); font-weight: 700; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.75rem; }
+.button { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; padding: .65rem 1.2rem; border: 1px solid var(--line-dark); border-radius: 999px; font-weight: 700; transition: transform 180ms ease,background 180ms ease; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { color: var(--ink); background: var(--accent); border-color: var(--accent); }
+.button-ghost { color: white; background: rgba(255,255,255,.04); }
+.hero-stats { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; margin: 0; }
+.hero-stats div { padding-top: .85rem; border-top: 1px solid var(--line-dark); }
+.hero-stats dt { font-size: 1.1rem; font-weight: 800; line-height: 1.5; }
+.hero-stats dd { margin: .3rem 0 0; color: rgba(255,255,255,.64); font-size: .8rem; }
+.hero-panel { width: 100%; max-width: 350px; justify-self: end; padding: 1.25rem; background: rgba(255,255,255,.055); border: 1px solid var(--line-dark); border-radius: var(--radius); }
+.panel-top { display: flex; justify-content: space-between; color: rgba(255,255,255,.6); font: 700 .68rem/1.4 var(--mono); letter-spacing: .07em; }
+.panel-state { color: var(--accent); }
+.profile-portrait { aspect-ratio: 4 / 3; margin: 1.1rem 0; overflow: hidden; background: rgba(255,255,255,.06); border: 1px solid var(--line-dark); border-radius: 1rem; }
+.profile-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.code-lines { padding-top: .85rem; border-top: 1px solid var(--line-dark); color: rgba(255,255,255,.65); font-size: .75rem; }
+.code-lines p { margin-bottom: .2rem; }
+.code-lines .profile-motto { color: white; font-size: .9rem; font-weight: 700; }
+.section { width: min(calc(100% - 2.5rem),var(--content)); margin: auto; padding: clamp(3rem,6vw,5rem) 0; }
+.section-dark { width: 100%; max-width: none; padding-inline: max(1.25rem,calc((100vw - var(--content)) / 2)); color: white; background: var(--ink-soft); }
+.section-heading { display: grid; grid-template-columns: minmax(180px,.35fr) minmax(0,1fr); align-items: start; gap: 2rem; margin-bottom: 2rem; }
+.section-heading h2 { max-width: 800px; margin: 0; font-size: clamp(1.65rem,3.2vw,2.6rem); line-height: 1.35; letter-spacing: -.025em; }
+.section-heading .eyebrow { margin-top: .45rem; }
+.project-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+.project-card { min-width: 0; padding: clamp(1.25rem,2.5vw,2rem); background: rgba(255,255,255,.025); border: 1px solid var(--line-dark); border-radius: 1rem; }
+.project-featured { grid-column: 1 / -1; background: rgba(40,215,183,.05); border-color: rgba(40,215,183,.4); }
+.project-featured > p { max-width: 960px; }
+.project-number { margin-bottom: 1rem; color: var(--accent); font: 700 .75rem/1.5 var(--mono); }
+.project-context { margin-bottom: .5rem; color: var(--warm); font-size: .78rem; }
+.project-card h3 { margin-bottom: .85rem; font-size: clamp(1.25rem,2vw,1.6rem); line-height: 1.5; }
+.project-featured h3 { font-size: clamp(1.45rem,2.6vw,2rem); }
+.project-card > p:not(.project-context) { color: rgba(255,255,255,.76); font-size: .95rem; }
+.project-result { margin: 1.2rem 0; padding-top: 1rem; border-top: 1px solid var(--line-dark); }
+.project-result strong { display: block; margin-bottom: .35rem; color: var(--accent); font-size: .85rem; }
+.tag-list, .skill-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+.tag-list li { padding: .3rem .6rem; color: rgba(255,255,255,.72); background: rgba(255,255,255,.04); border: 1px solid var(--line-dark); border-radius: 999px; font-size: .75rem; }
+.project-details { margin-top: 1.2rem; padding-top: .9rem; border-top: 1px solid var(--line-dark); font-size: .9rem; color: rgba(255,255,255,.76); }
+.project-details summary { width: fit-content; max-width: 100%; min-height: 2.75rem; padding: .5rem .15rem; color: var(--accent); cursor: pointer; }
+.project-details ul { max-width: 960px; padding-left: 1.3rem; margin: .75rem 0 .25rem; }
+.project-details li + li { margin-top: .5rem; }
+.timeline { border-top: 1px solid var(--line); }
+.timeline-item { display: grid; grid-template-columns: minmax(180px,.35fr) minmax(0,1fr); gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.timeline-item time { color: var(--accent-dark); font: 800 .85rem/1.6 var(--mono); }
+.timeline-kicker { margin-bottom: .3rem; color: var(--muted); font-size: .85rem; font-weight: 700; }
+.timeline-item h3 { margin-bottom: .6rem; font-size: clamp(1.15rem,2vw,1.4rem); }
+.timeline-item div > p:last-child { max-width: 760px; margin-bottom: 0; color: var(--muted); }
+.articles-section { padding-top: 1rem; }
+.article-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+.article-card { display: flex; flex-direction: column; min-width: 0; padding: 1.5rem; background: var(--paper-bright); border: 1px solid var(--line); border-radius: 1rem; }
+.article-meta { color: var(--accent-dark); font-size: .78rem; }
+.article-card h3 { margin-bottom: .9rem; font-size: 1.15rem; line-height: 1.6; overflow-wrap: anywhere; }
+.article-card h3 a:hover { color: var(--accent-dark); text-decoration: underline; text-underline-offset: .2em; }
+.article-card > p:not(.article-meta) { color: var(--muted); font-size: .9rem; }
+.article-link { align-self: start; margin-top: auto; padding: .5rem 0; color: var(--accent-dark); font-size: .85rem; font-weight: 700; }
+.articles-more { margin: 1.25rem 0 0; text-align: right; color: var(--accent-dark); font-size: .9rem; }
+.articles-more a, .footer-links a { display: inline-block; padding: .55rem 0; }
+.articles-more a:hover, .footer-links a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.skills-section { padding-top: 1rem; }
+.about-copy { max-width: 900px; margin-bottom: 1.5rem; color: var(--muted); }
+.skill-groups { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+.skill-groups article { padding: 1.4rem; background: var(--paper-bright); border: 1px solid var(--line); border-radius: 1rem; }
+.skill-index { margin-bottom: .6rem; color: var(--accent-dark); font: 700 .75rem/1.4 var(--mono); }
+.skill-groups h3 { margin: 0 0 1rem; font-size: 1.15rem; }
+.skill-list li { padding: .45rem .65rem; color: var(--ink-soft); background: var(--paper); border-radius: .45rem; font: .76rem/1.4 var(--mono); }
+.contact-section { width: min(calc(100% - 2.5rem),var(--content)); margin: 0 auto 2rem; padding: clamp(1.5rem,4vw,3rem); display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 2rem; color: white; background: var(--ink); border-radius: var(--radius); }
+.contact-section h2 { margin: 0; font-size: clamp(1.5rem,3vw,2.5rem); line-height: 1.4; }
+.contact-intro { margin: .75rem 0 0; color: rgba(255,255,255,.7); font-size: .9rem; }
+.contact-link { display: inline-flex; align-items: center; gap: .85rem; padding: .65rem 0; color: var(--accent); border-bottom: 1px solid var(--accent); font: 700 .9rem/1.5 var(--mono); overflow-wrap: anywhere; }
+.contact-link span:last-child { font-size: 1.3rem; }
+.site-footer { width: min(calc(100% - 2.5rem),var(--content)); margin: auto; padding: 1rem 0 1.75rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .8rem; }
+.site-footer p { margin: 0; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
 .js .hero-reveal,
 .js .reveal {
   --reveal-distance: 40px;
   --reveal-duration: 700ms;
   --reveal-scale: 0.985;
   opacity: 0;
-  transform: translate3d(0, var(--reveal-distance), 0)
-    scale(var(--reveal-scale, 0.985));
-  transition:
-    opacity var(--reveal-duration) cubic-bezier(0.22, 1, 0.36, 1)
-      var(--reveal-delay, 0ms),
-    transform var(--reveal-duration) cubic-bezier(0.22, 1, 0.36, 1)
-      var(--reveal-delay, 0ms);
+  transform: translate3d(0,var(--reveal-distance),0) scale(var(--reveal-scale, 0.985));
+  transition: opacity var(--reveal-duration) cubic-bezier(.22,1,.36,1) var(--reveal-delay,0ms), transform var(--reveal-duration) cubic-bezier(.22,1,.36,1) var(--reveal-delay,0ms);
 }
-.js .hero-reveal {
-  --reveal-distance: 32px;
+.js .hero-reveal { --reveal-distance: 32px; }
+.js .hero-reveal.is-visible, .js .reveal.is-visible { opacity: 1; transform: translate3d(0,0,0) scale(1); }
+@media (max-width: 900px) {
+  .hero { grid-template-columns: minmax(0,1fr) 240px; gap: 1.5rem; }
+  .hero-stats { gap: .6rem; }
+  .hero-stats dt { font-size: 1rem; }
+  .project-grid, .article-grid { grid-template-columns: 1fr; }
+  .project-number { margin-bottom: .6rem; }
+  .section-heading, .timeline-item { grid-template-columns: 160px minmax(0,1fr); gap: 1.25rem; }
+  .skill-groups { grid-template-columns: 1fr; }
+  .contact-section { grid-template-columns: 1fr; gap: 1rem; }
+  .contact-link { justify-self: start; }
 }
-.js .hero-reveal.is-visible,
-.js .reveal.is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0) scale(1);
+@media (max-width: 680px) {
+  html { scroll-padding-top: 5rem; }
+  .nav-shell { width: calc(100% - 2rem); min-height: 4rem; gap: 1rem; }
+  .brand > span:last-child { display: none; }
+  .nav-links { min-width: 0; gap: 1rem; overflow-x: auto; font-size: .8rem; }
+  .hero { grid-template-columns: minmax(0,1fr); padding: 2.5rem 1rem 2rem; gap: 1.5rem; }
+  h1 { font-size: 2.8rem; margin-bottom: 1.2rem; }
+  h1 span { font-size: 1.4rem; }
+  .hero-lead { font-size: .95rem; }
+  .hero-actions { margin-bottom: 1.3rem; }
+  .hero-stats { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .hero-stats dt { font-size: .95rem; }
+  .hero-stats dd { font-size: .72rem; }
+  .hero-panel { max-width: none; padding: .9rem; display: grid; grid-template-columns: 80px minmax(0,1fr); align-items: center; gap: 1rem; border-radius: 1rem; }
+  .panel-top { display: none; }
+  .profile-portrait { width: 80px; aspect-ratio: 1 / 1; margin: 0; border-radius: .65rem; }
+  .code-lines { border: 0; padding: 0; }
+  .section, .contact-section, .site-footer { width: calc(100% - 2rem); }
+  .section { padding-block: 2.5rem; }
+  .section-dark { width: 100%; padding-inline: 1rem; }
+  .section-heading, .timeline-item { grid-template-columns: minmax(0,1fr); gap: .6rem; }
+  .section-heading { margin-bottom: 1.4rem; }
+  .section-heading .eyebrow { margin: 0; }
+  .section-heading h2 { font-size: 1.7rem; }
+  .project-card, .article-card { padding: 1.2rem; }
+  .timeline-item { padding: 1.25rem 0; }
+  .articles-section, .skills-section { padding-top: 0; }
+  .site-footer { gap: .5rem; }
+  .site-footer > p:first-child { flex-basis: 100%; }
+  .js .hero-reveal, .js .reveal { --reveal-distance: 24px; --reveal-duration: 560ms; }
 }
-@media (max-width: 900px) { .hero { grid-template-columns: 1fr; min-height: auto; } .hero-panel { max-width: 680px; } .project-grid, .skill-groups { grid-template-columns: 1fr; } .project-number { margin-bottom: 3rem; } .contact-section { grid-template-columns: 1fr; align-items: start; } }
-@media (max-width: 680px) { .nav-shell { width: min(calc(100% - 1.5rem), var(--content)); min-height: 4rem; } .brand > span:last-child { display: none; } .nav-links { gap: 1rem; overflow-x: auto; font-size: 0.78rem; } .hero { padding-inline: 1rem; } h1 { font-size: clamp(2.7rem, 15vw, 4.7rem); } .hero-stats { grid-template-columns: 1fr; } .hero-stats div { display: grid; grid-template-columns: 70px 1fr; align-items: baseline; } .section, .contact-section, .site-footer { width: min(calc(100% - 2rem), var(--content)); } .section-heading, .about-layout, .timeline-item { grid-template-columns: 1fr; gap: 1rem; } .capability-grid { grid-template-columns: 1fr; } .capability-card { min-height: 180px; } .site-footer { flex-direction: column; } .js .hero-reveal, .js .reveal { --reveal-distance: 24px; --reveal-duration: 560ms; } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; } .js .hero-reveal, .js .reveal { opacity: 1 !important; transform: none !important; transition: none !important; } }
-@media print { :root { --paper: #fff; --paper-bright: #fff; --accent: #087b6a; --accent-dark: #087b6a; --warm: #725113; } .site-header, .hero-panel, .hero-actions { display: none; } .hero, .section-dark, .contact-section { color: #000; background: #fff; } .hero { min-height: auto; padding: 2rem 0; display: block; } .hero h1 span { color: #087b6a; } .hero-stats div { border-top: 1px solid #777; } .hero-stats dd { color: #333; } .section, .section-dark, .contact-section, .site-footer { width: 100%; padding: 1.5rem 0; box-shadow: none; border-radius: 0; } .project-grid { grid-template-columns: 1fr; background: transparent; border-color: #bbb; } .project-card { color: #000; background: #fff; border-bottom: 1px solid #bbb; break-inside: avoid; } .hero-lead, .project-card > p:not(.project-context):not(.project-result), .project-result, .tag-list li { color: #333; } .tag-list li { border-color: #bbb; background: transparent; } .js .hero-reveal, .js .reveal { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  .js .hero-reveal, .js .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+@media print {
+  body { background: white; color: black; }
+  .site-header, .hero-panel, .hero-actions, .skip-link { display: none; }
+  .hero, .section-dark, .contact-section { color: black; background: white; }
+  .hero { padding: 1rem 0; display: block; }
+  .hero h1 span, .hero-industry, .hero-lead, .hero-stats dd, .section-dark .eyebrow, .contact-section .eyebrow, .contact-intro { color: #333; }
+  .section, .section-dark, .contact-section, .site-footer { width: 100%; padding: 1rem 0; margin: 0; border-radius: 0; }
+  .project-grid, .article-grid { grid-template-columns: 1fr; }
+  .project-card, .article-card { color: black; background: white; border-color: #bbb; break-inside: avoid; }
+  .project-card > p:not(.project-context), .project-result strong, .project-details, .tag-list li { color: #333; }
+  .tag-list li { background: white; border-color: #bbb; }
+  .project-number, .project-context, .project-details summary { color: #087b6a; }
+  .js .hero-reveal, .js .reveal { opacity: 1; transform: none; }
+}
   </style>
 </head>
 <body>
@@ -67,9 +204,9 @@
         <span>黄广平</span>
       </a>
       <div class="nav-links">
-        <a href="#about">关于我</a>
         <a href="#projects">项目</a>
         <a href="#experience">经历</a>
+        <a href="#articles">文章</a>
         <a href="#skills">能力</a>
         <a href="#contact">联系</a>
       </div>
@@ -80,20 +217,23 @@
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="hero-content">
         <p class="eyebrow"><span class="status-dot"></span> Java Backend Engineer</p>
-        <h1 id="hero-title">把复杂业务，<br><span>做成可靠系统。</span></h1>
-        <p class="hero-lead">你好，我是黄广平，一名拥有 5 年 Java 后端开发经验的工程师。长期参与 OMS、TMS 等企业级业务系统建设，专注复杂业务交付、数据库演进与微服务协作。</p>
+        <h1 id="hero-title">黄广平<span>Java 后端开发工程师</span></h1>
+        <div class="hero-lead">
+          <p class="hero-industry">深耕医药零售与电商物流业务</p>
+          <p>拥有 5 年 Java 后端开发经验，熟悉 OMS 订单、B2C 售后、TMS 排班及网络货运业务，具备跨系统协作与生产环境交付经验。</p>
+        </div>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">查看代表项目</a>
           <a class="button button-ghost" href="mailto:Java0120@163.com">邮件联系</a>
         </div>
         <dl class="hero-stats" aria-label="职业概览">
-          <div><dt>5+</dt><dd>年后端研发经验</dd></div>
-          <div><dt>03</dt><dd>个代表项目</dd></div>
-          <div><dt>02</dt><dd>段企业经历</dd></div>
+          <div><dt>5 年</dt><dd>Java 后端研发</dd></div>
+          <div><dt>医药零售</dt><dd>订单与售后</dd></div>
+          <div><dt>电商物流</dt><dd>排班与货运</dd></div>
         </dl>
       </div>
       <aside class="hero-panel" aria-label="黄广平个人资料">
-        <div class="panel-top"><span>PROFILE / 01</span><span class="panel-state">ONLINE</span></div>
+        <div class="panel-top"><span>PROFILE / 黄广平</span><span class="panel-state">JAVA</span></div>
         <figure class="profile-portrait">
           <img
             class="profile-portrait-image"
@@ -105,57 +245,60 @@
             fetchpriority="high">
         </figure>
         <div class="code-lines">
-          <p><span>role</span> = "Java 后端开发工程师"</p>
-          <p><span>focus</span> = ["业务系统", "数据库演进"]</p>
-          <p><span>method</span> = "理解问题 → 设计方案 → 推动落地"</p>
+          <p class="profile-motto">把复杂业务，做成可靠系统。</p>
+          <p>理解业务 · 梳理方案 · 推动落地</p>
         </div>
       </aside>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="section-heading">
-        <p class="eyebrow">ABOUT / 关于我</p>
-        <h2 id="about-title">既理解业务，也把方案落到生产。</h2>
-      </div>
-      <div class="about-layout">
-        <div class="about-copy">
-          <p>我拥有 5 年 Java 后端开发经验，经历集中在 OMS、TMS 与物流相关企业级系统。相比堆叠技术名词，我更关注业务如何运转、问题真正发生在哪里，以及怎样用边界清楚的工程方案持续交付。</p>
-          <p>从业务需求分析、方案设计、数据库拆分与跨库迁移，到消息解耦、跨服务联调、上线切换和线上问题排查，我能够沿着完整交付链路推进工作，并对结果负责。</p>
-          <p>我重视代码质量与工程规范，擅长结合业务定位问题，推动方案从设计、开发到上线落地；也会使用 AI 编程工具辅助代码理解、重构、测试和技术文档整理，持续提升研发与交付效率。</p>
-        </div>
-        <div class="capability-grid">
-          <article class="capability-card"><span>01</span><h3>数据库演进</h3><p>数据拆分、平滑迁移、路由与查询机制改造。</p></article>
-          <article class="capability-card"><span>02</span><h3>微服务协作</h3><p>服务边界、消息解耦和上下游系统联调。</p></article>
-          <article class="capability-card"><span>03</span><h3>业务系统交付</h3><p>从需求理解、方案设计到上线维护的完整闭环。</p></article>
-          <article class="capability-card"><span>04</span><h3>AI 辅助研发</h3><p>用于代码理解、重构、测试和技术文档整理。</p></article>
-        </div>
-      </div>
     </section>
 
     <section class="section section-dark" id="projects" aria-labelledby="projects-title">
       <div class="section-heading">
         <p class="eyebrow">SELECTED WORK / 代表项目</p>
-        <h2 id="projects-title">用可验证的行动，解决真实工程问题。</h2>
+        <h2 id="projects-title">从订单售后，到物流履约。</h2>
       </div>
       <div class="project-grid">
-        <article class="project-card">
-          <div class="project-number">01</div>
-          <p class="project-context">医药零售 · OMS</p>
-          <h3>OMS 订单日志迁移</h3>
-          <p>面对订单日志持续增长带来的存储压力，负责梳理相关读写链路，建设独立服务与新数据存储，并改造原有接口。</p>
-          <p class="project-result"><strong>结果</strong> 通过读写切换与增量同步完成平滑迁移，降低原库存储压力，保障业务连续运行。</p>
-          <ul class="tag-list"><li>Spring Boot</li><li>MySQL</li><li>Binlog</li><li>Docker</li></ul>
+        <article class="project-card project-featured">
+          <div class="project-number">01 / 最近实践</div>
+          <p class="project-context">医药零售 · B2C 售后</p>
+          <h3>让退货与退款，按业务顺序流转</h3>
+          <p>原有单一售后状态将退货与退款绑定，难以支持先退款后退货等操作顺序。负责业务梳理、技术方案设计与核心代码开发，将退货与退款拆分为独立状态，并映射原有售后状态。</p>
+          <p class="project-result"><strong>落地效果</strong>已上线，支持同一售后单下创建多笔销退单，减少因销退数量调整而重复新建售后单的操作。</p>
+          <ul class="tag-list"><li>业务建模</li><li>双状态流转</li><li>新旧流程兼容</li><li>跨系统联调</li></ul>
+          <details class="project-details">
+            <summary>查看方案与职责</summary>
+            <ul>
+              <li>在原售后单增加退货状态与退款状态，通过售后单灰度标记区分新旧流程，并保留旧状态字段的映射兼容。</li>
+              <li>按售后类型区分完结条件：仅退款在退款审核通过后完结，仍可在履约系统销退；退货退款在全部收货后自动触发退款并完结；仅退货在全部收货后完结。</li>
+              <li>梳理下游履约交互、第三方平台退款通知及回调适配；退款已完成但商品未退回时，OMS 仍可保持待收货状态。</li>
+            </ul>
+          </details>
         </article>
         <article class="project-card">
           <div class="project-number">02</div>
-          <p class="project-context">社区电商 · TMS</p>
-          <h3>TMS 排班模块水平拆分</h3>
-          <p>长期负责排班模块研发与维护，并参与面向业务增长的数据库水平拆分、分片键选择及服务改造。</p>
-          <p class="project-result"><strong>结果</strong> 完成数据路由与查询机制重构，降低单库存储与访问压力，为后续业务扩展保留空间。</p>
-          <ul class="tag-list"><li>Spring Boot</li><li>MySQL</li><li>Redis</li><li>Elasticsearch</li></ul>
+          <p class="project-context">医药零售 · OMS</p>
+          <h3>OMS 订单日志迁移</h3>
+          <p>针对订单库容量告警，负责应用侧日志读写链路梳理、接口改造与读写切换，配合运维、DBA 完成日志数据迁移。</p>
+          <p class="project-result"><strong>落地效果</strong>完成日志读写切换，释放核心库存储空间；切换期间业务未中断，上线运行稳定。</p>
+          <ul class="tag-list"><li>MySQL</li><li>接口改造</li><li>读写切换</li></ul>
+          <details class="project-details">
+            <summary>查看迁移中的分工与排查</summary>
+            <ul>
+              <li>分别控制读、写切换，读链路保留切回旧从库的能力。</li>
+              <li>切写后排查旧主库残留写流量，补齐遗漏入口，确认日志写入已切换至新库。</li>
+              <li>运维负责历史数据迁移及云工具 Binlog 同步；DBA 分批清理历史数据，控制主从延迟风险。</li>
+            </ul>
+          </details>
         </article>
         <article class="project-card">
           <div class="project-number">03</div>
+          <p class="project-context">社区电商 · TMS</p>
+          <h3>TMS 排班模块研发</h3>
+          <p>负责物流排班模块的业务开发与日常维护，配合上下游完成需求梳理、接口联调，并参与数据库拆分相关的应用改造。</p>
+          <p class="project-result"><strong>工作重点</strong>围绕排班业务持续交付功能，配合系统改造与上线维护，支持物流作业流程。</p>
+          <ul class="tag-list"><li>Spring Boot</li><li>MySQL</li><li>Redis</li><li>Elasticsearch</li></ul>
+        </article>
+        <article class="project-card">
+          <div class="project-number">04</div>
           <p class="project-context">物流科技 · 跨系统协作</p>
           <h3>网络货运平台</h3>
           <p>参与货主、货源模块和 TMS 接入改造，将排班信息衔接至货源与调度流程，支持监管合规链路。</p>
@@ -168,7 +311,7 @@
     <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="section-heading">
         <p class="eyebrow">EXPERIENCE / 经历</p>
-        <h2 id="experience-title">持续在业务复杂度中积累工程判断。</h2>
+        <h2 id="experience-title">在行业里积累，也在业务中成长。</h2>
       </div>
       <div class="timeline">
         <article class="timeline-item">
@@ -181,16 +324,45 @@
         </article>
         <article class="timeline-item">
           <time datetime="2021-06">2021.06</time>
-          <div><p class="timeline-kicker">教育经历</p><h3>吉首大学 · 软件工程专业</h3><p>完成软件工程专业学习，为后续企业级 Java 开发建立基础。</p></div>
+          <div><p class="timeline-kicker">教育经历 · 本科</p><h3>吉首大学 · 软件工程</h3><p>2021 年 6 月毕业</p></div>
         </article>
       </div>
+    </section>
+
+    <section class="section articles-section" id="articles" aria-labelledby="articles-title">
+      <div class="section-heading">
+        <p class="eyebrow">WRITING / 技术文章</p>
+        <h2 id="articles-title">把学习与思考，写成可以回看的记录。</h2>
+      </div>
+      <div class="article-grid">
+        <article class="article-card">
+          <p class="article-meta">数据库 · <time datetime="2026-07-07">2026.07.07</time></p>
+          <h3><a href="https://www.cnblogs.com/Java0120/p/21193457">MySQL 事务与锁机制详解：从 MVCC 到 undo log、redo log、binlog</a></h3>
+          <p>梳理事务隔离、锁与日志之间的联系，理解并发读写和数据恢复背后的机制。</p>
+          <a class="article-link" href="https://www.cnblogs.com/Java0120/p/21193457" aria-label="阅读 MySQL 事务与锁机制详解">阅读文章 <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="article-card">
+          <p class="article-meta">缓存 · <time datetime="2026-08-20">2026.08.20</time></p>
+          <h3><a href="https://www.cnblogs.com/Java0120/p/22594620">Redis 高频面试题系统梳理：从数据结构、持久化到集群与分布式锁</a></h3>
+          <p>沿着数据模型、持久化与高可用梳理 Redis，整理常见方案的取舍与边界。</p>
+          <a class="article-link" href="https://www.cnblogs.com/Java0120/p/22594620" aria-label="阅读 Redis 高频面试题系统梳理">阅读文章 <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="article-card">
+          <p class="article-meta">Java 框架 · <time datetime="2026-06-22">2026.06.22</time></p>
+          <h3><a href="https://www.cnblogs.com/Java0120/p/20690058">Spring Boot 自动加载机制详解：从原理到手写一个 Starter</a></h3>
+          <p>从自动配置原理出发，通过手写 Starter 理解配置发现与条件装配。</p>
+          <a class="article-link" href="https://www.cnblogs.com/Java0120/p/20690058" aria-label="阅读 Spring Boot 自动加载机制详解">阅读文章 <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="articles-more"><a href="https://www.cnblogs.com/Java0120">查看全部博客文章 <span aria-hidden="true">↗</span></a></p>
     </section>
 
     <section class="section skills-section" id="skills" aria-labelledby="skills-title">
       <div class="section-heading">
         <p class="eyebrow">CAPABILITIES / 技术能力</p>
-        <h2 id="skills-title">围绕交付建立的技术组合。</h2>
+        <h2 id="skills-title">支撑日常开发的技术积累。</h2>
       </div>
+      <p class="about-copy">注重业务理解、团队协作与代码质量，能够配合上下游完成需求梳理、接口联调和上线维护。习惯通过技术博客整理学习与实践经验，并使用 AI 工具辅助代码理解、测试和文档编写。</p>
       <div class="skill-groups">
         <article><p class="skill-index">01</p><h3>语言与框架</h3><ul class="skill-list"><li>Java</li><li>Spring</li><li>Spring MVC</li><li>Spring Boot</li><li>MyBatis</li><li>Dubbo</li></ul></article>
         <article><p class="skill-index">02</p><h3>数据与中间件</h3><ul class="skill-list"><li>MySQL</li><li>Redis</li><li>RocketMQ</li><li>Elasticsearch</li><li>数据拆分</li><li>数据迁移</li></ul></article>
@@ -201,7 +373,8 @@
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div>
         <p class="eyebrow">CONTACT / 联系</p>
-        <h2 id="contact-title">如果你正在寻找一名务实的 Java 后端工程师，欢迎联系。</h2>
+        <h2 id="contact-title">聊聊业务，也聊聊技术。</h2>
+        <p class="contact-intro">欢迎交流 Java 后端、订单售后与物流系统相关的工作机会。</p>
       </div>
       <a class="contact-link" href="mailto:Java0120@163.com"><span>Java0120@163.com</span><span aria-hidden="true">↗</span></a>
     </section>
@@ -209,6 +382,11 @@
 
   <footer class="site-footer">
     <p>黄广平 · Java 后端开发工程师</p>
+    <nav class="footer-links" aria-label="个人外部链接">
+      <a href="https://www.cnblogs.com/Java0120">技术博客</a>
+      <a href="https://github.com/LovesJava">GitHub</a>
+      <a href="mailto:Java0120@163.com">邮件联系</a>
+    </nav>
     <p>© <span id="current-year">2026</span></p>
   </footer>
 
@@ -242,7 +420,7 @@ const revealGroups = [...document.querySelectorAll(".section")].map(
     [
       section.querySelector(":scope > .section-heading"),
       ...section.querySelectorAll(
-        ".about-copy, .capability-card, .project-card, .timeline-item, .skill-groups article"
+        ".about-copy, .project-card, .timeline-item, .article-card, .skill-groups article"
       ),
     ].filter(Boolean)
 );
